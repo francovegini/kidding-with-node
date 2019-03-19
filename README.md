@@ -1,2 +1,2 @@
-# kidding-with-node
-Just kidding with node
+# playing-with-node
+Just playing with node
