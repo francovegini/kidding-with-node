@@ -2,6 +2,7 @@
 
 {% block pagina %}
 
+
   <h1>Músicas da minha Playlist</h1>
 
   <table class="table table-striped">
@@ -21,9 +22,9 @@
           <td>{{musica.nome}}</td>
           <td>{{musica.artista}}</td>
           <td>
+
             {% for i in range(0, musica.estrelas) %}
               <span class="glyphicon glyphicon-star"></span>
-
             {% endfor %}
 
           </td>
