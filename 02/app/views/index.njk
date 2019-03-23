@@ -3,9 +3,9 @@
 {% block pagina %}
 
 
-  <h1>Músicas da minha Playlist</h1>
+<h1>Músicas da minha Playlist</h1>
 
-  <table class="table table-striped">
+<table class="table table-striped">
     <thead>
       <tr>
         <th>Id</th>
@@ -22,11 +22,9 @@
           <td>{{musica.nome}}</td>
           <td>{{musica.artista}}</td>
           <td>
-
             {% for i in range(0, musica.estrelas) %}
               <span class="glyphicon glyphicon-star"></span>
             {% endfor %}
-
           </td>
           <td>
             <a href="/edit/{{musica.id}}" class="btn btn-primary">Editar</a>
@@ -39,9 +37,8 @@
           </form>
         </tr>
       {% endfor %}
-
     </tbody>
-  </table>
+</table>
 
 
 {% endblock %}
