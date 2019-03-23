@@ -27,7 +27,6 @@ router.get('/edit/:id', (req, res, next) => {
         .where("id", id)
         .first()
         .then((musica) => {
-            console.log(musica);
             if (!musica) {
                 return res.send(400);
             }
