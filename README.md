@@ -1,5 +1,4 @@
 # Playing-with-node
-Just playing with node
 
 ### 01
 - Just Express.js
