@@ -1,7 +1,7 @@
 # Playing-with-node
 
 ### 01
-- Just Express.js
+- Express.js
 
 ### 02
 - Express.js + MySql
