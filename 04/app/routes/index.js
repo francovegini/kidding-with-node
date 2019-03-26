@@ -10,7 +10,7 @@ router.get('/', (req, res, next) => {
 });
 
 router.post('/', (req, res, next) => {
-    if (req.body.nome == 'admin' && req.body.senha == '1234') {
+    if (req.body.nome == 'admin' && req.body.senha == 'admin') {
         req.session.nome = req.body.nome;
         res.redirect('/home')
     } else {
