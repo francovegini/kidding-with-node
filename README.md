@@ -12,5 +12,8 @@
 ### 04 
 - Express.js + Express.js/Session
 
-### 04 
+### 05
+- Express.js + Passport
+
+### 06
 - Express.js + Passport
