@@ -1,21 +1,21 @@
 var authorize = {
-  isAuth : function(req, res, next) {
+    isAuth: function (req, res, next) {
 
-    if (!req.isAuthenticated()) {
-      return res.redirect('/')
+        if (!req.isAuthenticated()) {
+            return res.redirect('/')
+        }
+
+        next();
+    },
+
+    isNotAuth: function (req, res, next) {
+
+        if (req.isAuthenticated()) {
+            return res.redirect('/')
+        }
+
+        next();
     }
-
-    next();
-  },
-
-  isNotAuth : function(req, res, next) {
-
-    if (req.isAuthenticated()) {
-      return res.redirect('/')
-    }
-
-    next();
-  }
 };
 
 module.exports = authorize;
