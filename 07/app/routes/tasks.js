@@ -61,7 +61,6 @@ router.put('/edit/:id', isAuth, (req, res, next) => {
 
 router.delete('/delete/:id', isAuth, (req, res, next) => {
     const {id} = req.params;
-    console.log("deltetando" + id);
     db("tarefas")
         .where('id', id)
         .delete()

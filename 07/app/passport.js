@@ -9,12 +9,9 @@ passport.use(new LocalStrategy((username, password, done) => {
         .first()
         .then((user) => {
             if (!user || user.password !== password) {
-                console.log(user);
                 return done(null, false);
             }
-
             done(null, user)
-
         }, done);
 }));
 
