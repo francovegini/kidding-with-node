@@ -13,7 +13,10 @@
 - Express.js + Express.js/Session
 
 ### 05
-- Express.js + Passport
+- Express.js + Express.js/Session + Passport
 
 ### 06
-- Express.js + Passport
+- Express.js + Express.js/Session + Passport
+
+### 07
+- Express.js + Express.js/Session + Passport
