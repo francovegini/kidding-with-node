@@ -8,11 +8,9 @@ router.get('/login', isNotAuth, (req, res, next) => {
     res.render('login');
 });
 
-
 router.post('/login', passport.authenticate('local', {
     successRedirect: '/',
     failureRedirect: '/error',
-
 }));
 
 router.get('/logout', (req, res, next) => {
@@ -29,7 +27,6 @@ router.post('/register', isNotAuth, (req, res, next) => {
         passport.authenticate('local')(req, res, function () {
             res.redirect('/');
         });
-
     }, next)
 });
 

@@ -11,14 +11,12 @@ router.get('/', (req, res, next) => {
             isAuth: req.isAuthenticated()
         });
     }, next);
-
 });
 
 router.get('/add', isAuth, (req, res, next) => {
     res.render('add', {
         isAuth: req.isAuthenticated()
     });
-
 });
 
 router.post('/add', isAuth, (req, res, next) => {
@@ -37,12 +35,10 @@ router.get('/edit/:id', isAuth, (req, res, next) => {
             if (!tarefa) {
                 return res.send(400);
             }
-
             res.render("edit", {
                 tarefa: tarefa
             });
         }, next);
-
 });
 
 router.put('/edit/:id', isAuth, (req, res, next) => {
