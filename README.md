@@ -1,5 +1,7 @@
 # Playing-with-node
 
+Repository to study node
+
 ### 01
 - Express.js
 
@@ -21,4 +23,3 @@
 ### 07
 (https://hidden-ravine-67042.herokuapp.com/)
 - Express.js + Express.js/Session + Passport
-
